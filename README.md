@@ -1,7 +1,7 @@
 # TDD com Ruby on Rails, RSpec e Capybara
-Desenvovimento de aplicações guiadas por testes com Ruby on Rails e os frameworks de teste RSpec e Capybara. 
+Desenvolvimento de aplicações guiadas por testes com Ruby on Rails usando os frameworks RSpec e Capybara. 
 
-## O que eu estou aprendendo: 
+## O que estou aprendendo: 
 
 + Usar TDD
 + Usar BDD
