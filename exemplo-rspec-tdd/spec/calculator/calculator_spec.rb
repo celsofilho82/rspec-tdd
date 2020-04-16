@@ -2,18 +2,21 @@ require 'calculator'
 # Definindo o nome da classe que será testada descrevendo o seu teste.
 describe Calculator do
   # Definindo os cados de teste
-  it "sum method for 2 numbers" do
-    calc = Calculator.new
-    result = calc.sum(5, 7)
-    # Definido o critério para aceitação do teste
-    expect(result).to eq(12) 
+  # Usando o context para agrupar os tipos de teste que vamos utilizar
+  # Para melhor clareza, devemos usar "#" para metódos de instância e "." metódos de classe
+  context 'use #sum method' do
+    it "with positive numbers" do
+      calc = Calculator.new
+      result = calc.sum(5, 7)
+      # Definido o critério para aceitação do teste
+      expect(result).to eq(12) 
+    end
+    
+    it "with negative numbers" do
+      calc = Calculator.new
+      result = calc.sum(-5, 7)
+      # Definido o critério para aceitação do teste
+      expect(result).to eq(2) 
+    end  
   end
-  
-  it "user sum method for 2 numbers with negative numbers" do
-    calc = Calculator.new
-    result = calc.sum(-5, 7)
-    # Definido o critério para aceitação do teste
-    expect(result).to eq(2) 
-  end
-
 end
