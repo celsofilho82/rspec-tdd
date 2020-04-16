@@ -6,15 +6,15 @@ describe Calculator do
   # Para melhor clareza, devemos usar "#" para metódos de instância e "." metódos de classe
   context 'use #sum method' do
     it "with positive numbers" do
-      calc = Calculator.new
-      result = calc.sum(5, 7)
+      # classe já é referenciada no descibe, usamos o subject para que não seja necessário instancia-la 
+      # calc = Calculator.new
+      result = subject.sum(5, 7)
       # Definido o critério para aceitação do teste
       expect(result).to eq(12) 
     end
     
     it "with negative numbers" do
-      calc = Calculator.new
-      result = calc.sum(-5, 7)
+      result = subject.sum(-5, 7)
       # Definido o critério para aceitação do teste
       expect(result).to eq(2) 
     end  
