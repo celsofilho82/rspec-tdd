@@ -36,4 +36,12 @@ RSpec.describe Customer, type: :model do
     expect(customer.fullname).to start_with("Sr. ")  
   end
 
+  # Gerando atributos transitórios onde caso seja informado no método
+  # será executando um after: definido na factory
+  it "Using transient attribute" do
+    customer = create(:customer_default, upcased: true)
+    expect(customer.name.upcase).to eq(customer.name)
+  end
+  
+
 end
