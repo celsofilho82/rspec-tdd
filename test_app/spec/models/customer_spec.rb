@@ -28,4 +28,12 @@ RSpec.describe Customer, type: :model do
     expect(customer.vip).to eq(true)  
   end
 
+  # attributes_for extrair os atributos de uma determinada factory
+  it "Using attributes_for" do
+    # Extraindo os atributos da fabrica :customer
+    attrs = attributes_for(:customer)
+    customer = Customer.create(attrs)
+    expect(customer.fullname).to start_with("Sr. ")  
+  end
+
 end
