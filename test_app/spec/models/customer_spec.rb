@@ -15,5 +15,10 @@ RSpec.describe Customer, type: :model do
     customer = customers(:jackson)
     expect(customer.name).to eq("Jackson Pires")  
   end
+
+  it "Create a Customer with FactoryBot(FactoryGirl)" do
+    customer = create(:customer)
+    expect(customer.name).to eq("Celso Ribeiro")  
+  end
   
 end
