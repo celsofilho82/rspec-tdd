@@ -11,9 +11,10 @@ test_app/.bundle
 test_app/log/*
 test_app/tmp/*
 test_app/tmp/cache/*
+test_app/log/test.log
 test_app/tmp/cache/bootsnap-load-path-cache/*
-test_app/!/log/.keep
-test_app/!/tmp/.keep
+test_app/tmp/cache/bootsnap-load-path-cache
+test_app/tmp/cache/bootsnap-compile-cache/*
 
 # Ignore uploaded files in development
 test_app/storage/*
