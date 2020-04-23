@@ -23,4 +23,9 @@ RSpec.describe Customer, type: :model do
   
   it { expect { create(:customer) }.to change{ Customer.all.size }.by(1) } 
 
+  it "Create a Customer with FactoryBot heritage" do
+    customer = create(:customer_vip)
+    expect(customer.vip).to eq(true)  
+  end
+
 end
