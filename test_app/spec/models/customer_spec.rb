@@ -43,5 +43,24 @@ RSpec.describe Customer, type: :model do
     expect(customer.name.upcase).to eq(customer.name)
   end
   
+  # Ao transformar a factory gender em "trait" podemos utilizar-la em composição
+  # com outras factorys
+  it 'Customer vip and male' do
+    customer = create(:customer_vip, :male)
+    expect(customer.gender).to eq('M')  
+  end
+
+  # Testando as traits default
+  it 'Trait customer default male' do
+    customer = create(:customer_default_male)
+    expect(customer.days_to_pay).to eq(15)
+    expect(customer.gender).to eq('M')   
+  end
+
+  it 'Trait customer default female' do
+    customer = create(:customer_default_female)
+    expect(customer.days_to_pay).to eq(15)
+    expect(customer.gender).to eq('F')   
+  end
 
 end
