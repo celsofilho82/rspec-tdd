@@ -3,6 +3,7 @@ FactoryBot.define do
 
     transient do
       upcased { false }
+      qty_orders { 3 }
     end
 
     name { Faker::Name.name }
@@ -26,6 +27,14 @@ FactoryBot.define do
     trait :default do
       vip { false }
       days_to_pay { 15 }
+    end
+
+    # Se usarmos customer com a trait with_ordes, vamos criar um cliente com 3 pedidos
+    # também estamos usando o atributo transient qty_orders
+    trait :with_orders do
+      after(:create) do |customer, evaluator|
+        create_list(:order, evaluator.qty_orders, customer: customer)
+      end
     end
 
     # Ao transformar a factory default, male, female em trait 
