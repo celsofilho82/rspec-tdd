@@ -60,7 +60,7 @@ RSpec.describe Customer, type: :model do
   it 'Trait customer default female' do
     customer = create(:customer_default_female)
     expect(customer.days_to_pay).to eq(15)
-    expect(customer.gender).to eq('F')   
+    expect(customer.gender).to eq('F') 
   end
 
 end
