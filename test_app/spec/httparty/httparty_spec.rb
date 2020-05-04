@@ -22,6 +22,19 @@ describe "HTTParty" do
       expect(content_type).to match(/application\/json/)
     end
   end
-  
+
+  it "VCR RSpec metadata", :vcr do
+    response = HTTParty.get('https://jsonplaceholder.typicode.com/posts/2')
+    content_type = response.headers['content-type']
+    expect(content_type).to match(/application\/json/)
+  end
+
+  # Neste exemplo estou indicando o cassete que quero utilizar no vcr metadata
+
+  it "VCR RSpec metadata indicando o cassette", vcr: { cassette_name: 'jsonplaceholder/posts' } do
+    response = HTTParty.get('https://jsonplaceholder.typicode.com/posts/2')
+    content_type = response.headers['content-type']
+    expect(content_type).to match(/application\/json/)
+  end
   
 end
