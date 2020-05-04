@@ -10,7 +10,7 @@ FactoryBot.define do
     # email { Faker::Internet.email }
     # Fazendo uso de sequence para gerar email dinâmico
     sequence(:email) { |n|  "email#{n}@gmail.com"}
-    # address { Faker::Address.street_address }
+    address { Faker::Address.street_address }
     
     trait :male do
       gender {'M'}
