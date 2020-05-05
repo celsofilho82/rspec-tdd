@@ -15,7 +15,7 @@ describe "HTTParty" do
   #   expect(content_type).to match(/application\/json/)  
   # end
 
-  it "VCR Test" do
+  it "VCR RSpec Test" do
     VCR.use_cassette("jsonplaceholder/posts") do
       response = HTTParty.get('https://jsonplaceholder.typicode.com/posts/2')
       content_type = response.headers['content-type']
@@ -43,5 +43,12 @@ describe "HTTParty" do
     expect(content_type).to match(/application\/json/)
   end
 
+  # Alterando o modo de gravação do VCR para que ao chamarmos uma URIs que não esteja gravada, o VCR vai fazer uma nova
+  # requisição à página e gerar um novo cassette
+  it "VCR RSpec alterando o modo de gravação", vcr: { cassette_name: 'jsonplaceholder/posts', :record => :new_episodes } do
+    response = HTTParty.get('https://jsonplaceholder.typicode.com/posts/10')
+    content_type = response.headers['content-type']
+    expect(content_type).to match(/application\/json/)
+  end
   
 end
