@@ -63,4 +63,12 @@ RSpec.describe Customer, type: :model do
     expect(customer.gender).to eq('F') 
   end
 
+  # Testando o time helper do rails para testes com datas
+  it 'Usando time helper' do
+    travel_to Time.zone.local(2004, 11, 24, 01, 04, 44) do
+      @customer = create(:customer_vip, :male)
+    end
+    expect(@customer.created_at).to eq(Time.new(2004, 11, 24, 01, 04, 44))  
+  end
+
 end

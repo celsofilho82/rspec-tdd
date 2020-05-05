@@ -1411,3 +1411,25 @@ Completed 200 OK in 13ms (Views: 3.2ms | ActiveRecord: 0.7ms)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 493846710], ["created_at", "2020-05-05 11:17:23.306200"], ["updated_at", "2020-05-05 11:17:23.306200"]]
   [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lucienne Parisian"], ["email", "email1@gmail.com"], ["address", "53071 Stroman Bridge"], ["created_at", "2020-05-05 11:47:49.080457"], ["updated_at", "2020-05-05 11:47:49.080457"]]
+  [1m[35m (33.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Roderick Koss"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "907 Terrell Street"], ["created_at", "2020-05-05 11:47:49.119058"], ["updated_at", "2020-05-05 11:47:49.119058"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jamee Block"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "4527 Daniel Road"], ["created_at", "2020-05-05 11:47:49.131514"], ["updated_at", "2020-05-05 11:47:49.131514"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wilfredo O'Reilly"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "7389 Ankunding Junction"], ["created_at", "2020-05-05 11:47:49.144475"], ["updated_at", "2020-05-05 11:47:49.144475"]]
+  [1m[35m (54.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rafael Feil"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "872 Maire Ville"], ["created_at", "2020-05-05 11:47:49.204377"], ["updated_at", "2020-05-05 11:47:49.204377"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Neal Mosciski"], ["email", "email6@gmail.com"], ["address", "64024 Lockman Mills"], ["created_at", "2020-05-05 11:47:49.231550"], ["updated_at", "2020-05-05 11:47:49.231550"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 493846716], ["created_at", "2020-05-05 11:47:49.247065"], ["updated_at", "2020-05-05 11:47:49.247065"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
