@@ -43,13 +43,21 @@ RSpec.describe CustomersController, type: :controller do
   end
   
   context "create" do
-    it "Com usuário logado, deve conseguir cadastrar cliente" do
+    it "Com usuário logado, deve cadastrar cliente" do
       member = create(:member)
       sign_in member
       customer_params = attributes_for(:customer)
       post :create, params: { customer: customer_params }
       expect(flash[:notice]).to match(/successfully created/)  
     end 
+
+    it "Com usuário logado, não deve cadastrar cliente faltando dados" do
+      member = create(:member)
+      sign_in member
+      customer_params = attributes_for(:customer, address: nil)
+      expect{post :create, params: { customer: customer_params }}.
+      not_to change(Customer, :count) 
+    end
 
     it "Deve retornar um cliente em formato json" do
       member = create(:member)
@@ -58,9 +66,12 @@ RSpec.describe CustomersController, type: :controller do
       post :create, format: :json, params: { customer: customer_params }
       expect(response.content_type).to eq('application/json')
     end
+
   end
   
-  
+  context "shoulda-matchers" do
+    it { should route(:get, '/customers').to(action: :index) }
+  end  
   
 
 
