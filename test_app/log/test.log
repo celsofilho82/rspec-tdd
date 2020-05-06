@@ -3150,3 +3150,195 @@ Processing by CustomersController#show as HTML
   Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
 Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms)
   [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Books & Outdoors"], ["created_at", "2020-05-06 21:29:17.361725"], ["updated_at", "2020-05-06 21:29:17.361725"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ivan Farrell II"], ["email", "email1@gmail.com"], ["address", "659 Tommy Walks"], ["created_at", "2020-05-06 21:29:17.404362"], ["updated_at", "2020-05-06 21:29:17.404362"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Burl Schamberger"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "4870 Russel Neck"], ["created_at", "2020-05-06 21:29:17.416714"], ["updated_at", "2020-05-06 21:29:17.416714"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Warner Fritsch"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "451 Nicolas Villages"], ["created_at", "2020-05-06 21:29:17.427959"], ["updated_at", "2020-05-06 21:29:17.427959"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Santiago Strosin"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "1430 Nicolas Cape"], ["created_at", "2020-05-06 21:29:17.441550"], ["updated_at", "2020-05-06 21:29:17.441550"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sheron Hamill"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "9888 Clay Mountain"], ["created_at", "2020-05-06 21:29:17.453282"], ["updated_at", "2020-05-06 21:29:17.453282"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "rodrick_funk@jacobs.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "rodrick_funk@jacobs.org"], ["encrypted_password", "$2a$04$0anwRSb0B4kOlXsWGA0.R.E2q7L87VTUf5WG/YHTUEIOVtSmGvi.6"], ["created_at", "2020-05-06 21:29:17.482263"], ["updated_at", "2020-05-06 21:29:17.482263"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lashaun Gleichner"], ["email", "email6@gmail.com"], ["address", "378 Dominica Ford"], ["created_at", "2020-05-06 21:29:17.506987"], ["updated_at", "2020-05-06 21:29:17.506987"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 78], ["created_at", "2020-05-06 21:29:17.520925"], ["updated_at", "2020-05-06 21:29:17.520925"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Tools & Movies"], ["created_at", "2020-05-06 21:29:17.543100"], ["updated_at", "2020-05-06 21:29:17.543100"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Practical Rubber Wallet"], ["price", 46.87], ["category_id", 26], ["created_at", "2020-05-06 21:29:17.553780"], ["updated_at", "2020-05-06 21:29:17.553780"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered customers/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "drew_torp@hauck.biz"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.8ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "drew_torp@hauck.biz"], ["encrypted_password", "$2a$04$LcQD9YzPdm1QfuvLZ.x7t.WPEUtAGcVTfnrSBHehASvyX6cAkZCV."], ["created_at", "2020-05-06 21:29:17.597278"], ["updated_at", "2020-05-06 21:29:17.597278"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering customers/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered customers/show.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "anthony.nienow@langosh.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.7ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "anthony.nienow@langosh.net"], ["encrypted_password", "$2a$04$sFceJ/de6qcaIOJHwLYNqeNKxBRYNAl.VXF6q.scn/Rexb9aRjh3C"], ["created_at", "2020-05-06 21:29:17.611537"], ["updated_at", "2020-05-06 21:29:17.611537"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering customers/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered customers/show.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "dillon@zieme.info"], ["LIMIT", 1]]
+  [1m[36mMember Create (1.0ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "dillon@zieme.info"], ["encrypted_password", "$2a$04$JE.GdVevyyeFuVvi06zSnOYf5tQTpf0eWq1d7qpzJFS8eXYWQr9dO"], ["created_at", "2020-05-06 21:29:17.626816"], ["updated_at", "2020-05-06 21:29:17.626816"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by CustomersController#create as HTML
+  Parameters: {"customer"=>{"address"=>"7861 Moen Heights", "email"=>"email7@gmail.com", "name"=>"Jordon Purdy PhD"}}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jordon Purdy PhD"], ["email", "email7@gmail.com"], ["address", "7861 Moen Heights"], ["created_at", "2020-05-06 21:29:17.636765"], ["updated_at", "2020-05-06 21:29:17.636765"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/customers/79
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (1.1ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Electronics & Home"], ["created_at", "2020-05-06 21:32:13.483274"], ["updated_at", "2020-05-06 21:32:13.483274"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Margot Sawayn"], ["email", "email1@gmail.com"], ["address", "32554 Gutkowski Drive"], ["created_at", "2020-05-06 21:32:13.509590"], ["updated_at", "2020-05-06 21:32:13.509590"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rudolf Prohaska"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "1240 Olga Bypass"], ["created_at", "2020-05-06 21:32:13.525213"], ["updated_at", "2020-05-06 21:32:13.525213"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jacob Bartoletti"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "25744 Mohamed Pass"], ["created_at", "2020-05-06 21:32:13.539929"], ["updated_at", "2020-05-06 21:32:13.539929"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cecil Trantow"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "2066 Schoen Green"], ["created_at", "2020-05-06 21:32:13.552776"], ["updated_at", "2020-05-06 21:32:13.552776"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peter Beatty"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "516 Vivien Brook"], ["created_at", "2020-05-06 21:32:13.565673"], ["updated_at", "2020-05-06 21:32:13.565673"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "abe@daugherty.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.5ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "abe@daugherty.com"], ["encrypted_password", "$2a$04$hu8RhM90GKsy1lo7AXWZqOWaMkFtvsI8U7pW9cD5CCcZb52XbgE8S"], ["created_at", "2020-05-06 21:32:13.600813"], ["updated_at", "2020-05-06 21:32:13.600813"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.8ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Evelina Ernser"], ["email", "email6@gmail.com"], ["address", "38325 Crooks Course"], ["created_at", "2020-05-06 21:32:13.627864"], ["updated_at", "2020-05-06 21:32:13.627864"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 84], ["created_at", "2020-05-06 21:32:13.641476"], ["updated_at", "2020-05-06 21:32:13.641476"]]
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Grocery, Music & Movies"], ["created_at", "2020-05-06 21:32:13.687946"], ["updated_at", "2020-05-06 21:32:13.687946"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Incredible Cotton Knife"], ["price", 71.97], ["category_id", 28], ["created_at", "2020-05-06 21:32:13.698381"], ["updated_at", "2020-05-06 21:32:13.698381"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered customers/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "marietta.ullrich@nicolas.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (1.0ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "marietta.ullrich@nicolas.com"], ["encrypted_password", "$2a$04$G5qbWAMQK66c2rFeZMcv9eRYnI.XO9TUqM6dw9kYPcMynt4o80vVu"], ["created_at", "2020-05-06 21:32:13.749825"], ["updated_at", "2020-05-06 21:32:13.749825"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering customers/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered customers/show.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "mary.wisozk@marquardtfeest.name"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.8ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "mary.wisozk@marquardtfeest.name"], ["encrypted_password", "$2a$04$AQA.iJzDkOjOnhl47Xv3k.teA8L4a3EhgNAtLRYbiTFv2DtK4nbgC"], ["created_at", "2020-05-06 21:32:13.766080"], ["updated_at", "2020-05-06 21:32:13.766080"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering customers/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered customers/show.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "efren@torphy.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (1.0ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "efren@torphy.org"], ["encrypted_password", "$2a$04$AGcSlLpqoPxV6svEqLNxqOJ7wzmQkq9m/RVlBSPHIACE1AAVM0N3y"], ["created_at", "2020-05-06 21:32:13.783114"], ["updated_at", "2020-05-06 21:32:13.783114"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by CustomersController#create as HTML
+  Parameters: {"customer"=>{"address"=>"429 Chad Tunnel", "email"=>"email7@gmail.com", "name"=>"Daryl Hirthe"}}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Daryl Hirthe"], ["email", "email7@gmail.com"], ["address", "429 Chad Tunnel"], ["created_at", "2020-05-06 21:32:13.793403"], ["updated_at", "2020-05-06 21:32:13.793403"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/customers/85
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m

@@ -42,6 +42,16 @@ RSpec.describe CustomersController, type: :controller do
 
   end
   
+  context "create" do
+    it "Com usuário logado, deve conseguir cadastrar cliente" do
+      member = create(:member)
+      sign_in member
+      customer_params = attributes_for(:customer)
+      post :create, params: { customer: customer_params }
+      expect(flash[:notice]).to match(/successfully created/)  
+    end 
+  end
+  
   
   
 
