@@ -12,14 +12,41 @@ require 'rails_helper'
 RSpec.describe CustomersController, type: :controller do
 
   # Fazendo uma requisição GET para a action index do customers_controller
-  it "controller deve responder sucesso" do
-    get :index
-    expect(response).to be_success
+  
+  context "index" do
+    it "Responde http status 200" do
+      get :index
+      expect(response).to have_http_status "200"
+    end
   end
 
-  it "controller deve responder com http status 200" do
-    get :index
-    expect(response).to have_http_status "200"
+  context "show" do
+    it "Responde http status 302 quando não autenticado " do
+      get :show, params: { id: Customer.first.id }
+      expect(response).to have_http_status "302"
+    end
+
+    it "Responde http status 200 quando autenticado" do
+      member = create(:member)
+      sign_in member
+      get :show, params: { id: Customer.first.id }
+      expect(response).to have_http_status "200"
+    end
+    
+    it "Deve renderizar o template show" do
+      member = create(:member)
+      sign_in member
+      get :show, params: { id: Customer.first.id }
+      expect(response).to render_template(:show)
+    end
+
   end
   
+  
+  
+
+
+
+  
+
 end
