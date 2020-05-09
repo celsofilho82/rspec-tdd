@@ -69,11 +69,18 @@ RSpec.describe "Customers", type: :request do
       end
     end
 
+    context "delete" do
+      it "DELETE /customers/1.json" do
+        member = create(:member)
+        login_as(member, scope: :member)
 
+        headers = { "ACCEPT" => "application/json"}
 
+        customer = Customer.first
+        delete "/customers/#{customer.id}.json", headers: headers
+        expect(response).to have_http_status(204)
+      end
     end
-    
-    
-  
+      
   end
 end
