@@ -6189,3 +6189,1497 @@ Processing by CustomersController#create as JSON
   Rendered customers/show.json.jbuilder (0.9ms)
 Completed 201 Created in 7ms (Views: 2.1ms | ActiveRecord: 0.5ms)
   [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Tools, Sports & Kids"], ["created_at", "2020-05-09 22:49:56.764830"], ["updated_at", "2020-05-09 22:49:56.764830"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Joanne Collier"], ["email", "email1@gmail.com"], ["address", "5958 Friesen Bridge"], ["created_at", "2020-05-09 22:49:56.798013"], ["updated_at", "2020-05-09 22:49:56.798013"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lila Williamson"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "89221 Joellen Station"], ["created_at", "2020-05-09 22:49:56.810684"], ["updated_at", "2020-05-09 22:49:56.810684"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jeanice Hauck"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "9459 Auer Valley"], ["created_at", "2020-05-09 22:49:56.823262"], ["updated_at", "2020-05-09 22:49:56.823262"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lazaro Howell"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "877 Larson Mill"], ["created_at", "2020-05-09 22:49:56.834800"], ["updated_at", "2020-05-09 22:49:56.834800"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rafael Leuschke"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "36231 Johns Forge"], ["created_at", "2020-05-09 22:49:56.846913"], ["updated_at", "2020-05-09 22:49:56.846913"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "carolyn@powlowski.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.5ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "carolyn@powlowski.net"], ["encrypted_password", "$2a$04$0ZajsTokGYQjEKWM6rdPHuHtdW5rZcEg2h1vCT3v7744rdmFqAdrK"], ["created_at", "2020-05-09 22:49:56.876712"], ["updated_at", "2020-05-09 22:49:56.876712"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dalton Schmitt"], ["email", "email6@gmail.com"], ["address", "7410 Lavern Cliffs"], ["created_at", "2020-05-09 22:49:56.899092"], ["updated_at", "2020-05-09 22:49:56.899092"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 84], ["created_at", "2020-05-09 22:49:56.912905"], ["updated_at", "2020-05-09 22:49:56.912905"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Music, Clothing & Jewelry"], ["created_at", "2020-05-09 22:49:56.934190"], ["updated_at", "2020-05-09 22:49:56.934190"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Durable Aluminum Plate"], ["price", 89.2], ["category_id", 28], ["created_at", "2020-05-09 22:49:56.944254"], ["updated_at", "2020-05-09 22:49:56.944254"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:49:56 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (1.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (2.5ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.8ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/index.json.jbuilder (57.0ms)
+Completed 200 OK in 69ms (Views: 59.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:49:57 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/show.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "duane_rosenbaum@wiza.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "duane_rosenbaum@wiza.org"], ["encrypted_password", "$2a$04$O2D6JcvMIxBhIKmsV0ystusaNjdChfaY8DTIMqV1dMSyOVyccqc4S"], ["created_at", "2020-05-09 22:49:57.096739"], ["updated_at", "2020-05-09 22:49:57.096739"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:49:57 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Dr. Emerita Rempel", "email"=>"email7@gmail.com", "address"=>"1811 Alfredo Knolls"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Emerita Rempel"], ["email", "email7@gmail.com"], ["address", "1811 Alfredo Knolls"], ["created_at", "2020-05-09 22:49:57.110687"], ["updated_at", "2020-05-09 22:49:57.110687"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 201 Created in 9ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "pablo@ko.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "pablo@ko.net"], ["encrypted_password", "$2a$04$xAskOcTZB4CnGvQrxmNn6Ow/3YP0561bSzVuEhBgrIftbKmHdHqNW"], ["created_at", "2020-05-09 22:49:57.128223"], ["updated_at", "2020-05-09 22:49:57.128223"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Books, Health & Beauty"], ["created_at", "2020-05-09 22:50:16.105235"], ["updated_at", "2020-05-09 22:50:16.105235"]]
+  [1m[35m (26.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cassey Leffler"], ["email", "email1@gmail.com"], ["address", "8749 Natisha Estate"], ["created_at", "2020-05-09 22:50:16.151559"], ["updated_at", "2020-05-09 22:50:16.151559"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Elvis Monahan"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "3562 Strosin Squares"], ["created_at", "2020-05-09 22:50:16.162830"], ["updated_at", "2020-05-09 22:50:16.162830"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mariano Runolfsson"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "3071 Mathew Gardens"], ["created_at", "2020-05-09 22:50:16.174695"], ["updated_at", "2020-05-09 22:50:16.174695"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jay Sanford"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "4251 Pete Ranch"], ["created_at", "2020-05-09 22:50:16.187408"], ["updated_at", "2020-05-09 22:50:16.187408"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Berniece Hyatt"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "118 Staci Dale"], ["created_at", "2020-05-09 22:50:16.200501"], ["updated_at", "2020-05-09 22:50:16.200501"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "jon@cronin.name"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "jon@cronin.name"], ["encrypted_password", "$2a$04$OJLYzkvVtO4cqpcj.Uc0bOVLMP5VYzgKgHV1hT4ao/S3krTm2EA8O"], ["created_at", "2020-05-09 22:50:16.229785"], ["updated_at", "2020-05-09 22:50:16.229785"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sal Bogan"], ["email", "email6@gmail.com"], ["address", "701 Jacobi Trafficway"], ["created_at", "2020-05-09 22:50:16.253479"], ["updated_at", "2020-05-09 22:50:16.253479"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 90], ["created_at", "2020-05-09 22:50:16.269218"], ["updated_at", "2020-05-09 22:50:16.269218"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Health"], ["created_at", "2020-05-09 22:50:16.291148"], ["updated_at", "2020-05-09 22:50:16.291148"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Heavy Duty Plastic Knife"], ["price", 88.88], ["category_id", 30], ["created_at", "2020-05-09 22:50:16.301141"], ["updated_at", "2020-05-09 22:50:16.301141"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:50:16 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.9ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/index.json.jbuilder (44.1ms)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:50:16 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/show.json.jbuilder (1.5ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "lillie.mohr@bailey.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "lillie.mohr@bailey.net"], ["encrypted_password", "$2a$04$2WfWZE2FVfMS8NH7OKD.f.1fonAUnv3qvB0KClkE5cmX4tSXc0D9G"], ["created_at", "2020-05-09 22:50:16.422425"], ["updated_at", "2020-05-09 22:50:16.422425"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:50:16 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Rosette Parisian IV", "email"=>"email7@gmail.com", "address"=>"5324 Zulauf Bypass"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rosette Parisian IV"], ["email", "email7@gmail.com"], ["address", "5324 Zulauf Bypass"], ["created_at", "2020-05-09 22:50:16.431541"], ["updated_at", "2020-05-09 22:50:16.431541"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/show.json.jbuilder (1.2ms)
+Completed 201 Created in 7ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "marion.stokes@goyette.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "marion.stokes@goyette.net"], ["encrypted_password", "$2a$04$KzSi7n7HIiJ8SMKp0TYIxOjaluDLoXJtZfJakapBiPrtPL4I7IlUy"], ["created_at", "2020-05-09 22:50:16.445280"], ["updated_at", "2020-05-09 22:50:16.445280"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Computers"], ["created_at", "2020-05-09 22:51:21.454822"], ["updated_at", "2020-05-09 22:51:21.454822"]]
+  [1m[35m (34.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dennis Lang"], ["email", "email1@gmail.com"], ["address", "92401 Rath Wall"], ["created_at", "2020-05-09 22:51:21.523306"], ["updated_at", "2020-05-09 22:51:21.523306"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (12.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Merle Johns"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "891 Bogan Shoal"], ["created_at", "2020-05-09 22:51:21.538425"], ["updated_at", "2020-05-09 22:51:21.538425"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.7ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ashlee Upton"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "1912 Dustin Manor"], ["created_at", "2020-05-09 22:51:21.565739"], ["updated_at", "2020-05-09 22:51:21.565739"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wilson Kuphal"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "465 Padberg Meadow"], ["created_at", "2020-05-09 22:51:21.578746"], ["updated_at", "2020-05-09 22:51:21.578746"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (1.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Clement Fahey"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "678 Dong Flats"], ["created_at", "2020-05-09 22:51:21.590662"], ["updated_at", "2020-05-09 22:51:21.590662"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "allan@armstrong.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "allan@armstrong.org"], ["encrypted_password", "$2a$04$xNTxAsZVGx6xeLEiR3Hpsu1UUBMkH7JpZfxY.n14CL/ah9wcJ4Mu6"], ["created_at", "2020-05-09 22:51:21.623453"], ["updated_at", "2020-05-09 22:51:21.623453"]]
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Daniella Olson"], ["email", "email6@gmail.com"], ["address", "68354 O'Hara Prairie"], ["created_at", "2020-05-09 22:51:21.652615"], ["updated_at", "2020-05-09 22:51:21.652615"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 96], ["created_at", "2020-05-09 22:51:21.668533"], ["updated_at", "2020-05-09 22:51:21.668533"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Music & Outdoors"], ["created_at", "2020-05-09 22:51:21.691088"], ["updated_at", "2020-05-09 22:51:21.691088"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Synergistic Iron Bottle"], ["price", 30.98], ["category_id", 32], ["created_at", "2020-05-09 22:51:21.704165"], ["updated_at", "2020-05-09 22:51:21.704165"]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:51:21 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.8ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/index.json.jbuilder (54.6ms)
+Completed 200 OK in 64ms (Views: 57.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:51:21 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/show.json.jbuilder (1.8ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "billy@homenickwindler.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "billy@homenickwindler.net"], ["encrypted_password", "$2a$04$cP1vDvnKmvOmDi4Mf3v.ru5ww8fGfzdwC5EtY1zpdRD8XipPXnpsW"], ["created_at", "2020-05-09 22:51:21.851060"], ["updated_at", "2020-05-09 22:51:21.851060"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:51:21 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Sherie Ebert", "email"=>"email7@gmail.com", "address"=>"216 Leonard Crossroad"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sherie Ebert"], ["email", "email7@gmail.com"], ["address", "216 Leonard Crossroad"], ["created_at", "2020-05-09 22:51:21.865381"], ["updated_at", "2020-05-09 22:51:21.865381"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 201 Created in 9ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "duncan.nitzsche@jacobson.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "duncan.nitzsche@jacobson.org"], ["encrypted_password", "$2a$04$dASHxnGrROySSBQupPVvAueHaQUIunsH9tt.s5uPYH5h0yclE630."], ["created_at", "2020-05-09 22:51:21.879443"], ["updated_at", "2020-05-09 22:51:21.879443"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Sports"], ["created_at", "2020-05-09 22:52:02.479476"], ["updated_at", "2020-05-09 22:52:02.479476"]]
+  [1m[35m (30.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Calvin Quigley Sr."], ["email", "email1@gmail.com"], ["address", "96545 Socorro Point"], ["created_at", "2020-05-09 22:52:02.535129"], ["updated_at", "2020-05-09 22:52:02.535129"]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mrs. Chiquita Bauch"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "34728 Gaylord Gateway"], ["created_at", "2020-05-09 22:52:02.550772"], ["updated_at", "2020-05-09 22:52:02.550772"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dora Gaylord"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "7295 Bartoletti Flats"], ["created_at", "2020-05-09 22:52:02.564226"], ["updated_at", "2020-05-09 22:52:02.564226"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Antonia Stehr"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "653 Pfannerstill Flat"], ["created_at", "2020-05-09 22:52:02.579099"], ["updated_at", "2020-05-09 22:52:02.579099"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sondra Pfannerstill"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "1544 Romaguera Haven"], ["created_at", "2020-05-09 22:52:02.595597"], ["updated_at", "2020-05-09 22:52:02.595597"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "benny@leannonluettgen.co"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "benny@leannonluettgen.co"], ["encrypted_password", "$2a$04$ELkGnKNo3TbW242vWOPYOexm2u8nn0LIx4rgXE8Ee8hv412o9YLMC"], ["created_at", "2020-05-09 22:52:02.631955"], ["updated_at", "2020-05-09 22:52:02.631955"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Sylvia Simonis"], ["email", "email6@gmail.com"], ["address", "1462 Rina Mission"], ["created_at", "2020-05-09 22:52:02.662589"], ["updated_at", "2020-05-09 22:52:02.662589"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 102], ["created_at", "2020-05-09 22:52:02.675558"], ["updated_at", "2020-05-09 22:52:02.675558"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Computers, Toys & Music"], ["created_at", "2020-05-09 22:52:02.710572"], ["updated_at", "2020-05-09 22:52:02.710572"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Awesome Plastic Keyboard"], ["price", 84.99], ["category_id", 34], ["created_at", "2020-05-09 22:52:02.720805"], ["updated_at", "2020-05-09 22:52:02.720805"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:52:02 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.9ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/index.json.jbuilder (41.4ms)
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:52:02 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/show.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "lauretta@sauer.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "lauretta@sauer.org"], ["encrypted_password", "$2a$04$aapbtP5njx0wh.b/AHjMQOHO7GkX2qvV/AlH0xzYgd.a/DDKoLHiO"], ["created_at", "2020-05-09 22:52:02.841325"], ["updated_at", "2020-05-09 22:52:02.841325"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:52:02 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Carolee Hayes", "email"=>"email7@gmail.com", "address"=>"19763 Padberg Loop"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Carolee Hayes"], ["email", "email7@gmail.com"], ["address", "19763 Padberg Loop"], ["created_at", "2020-05-09 22:52:02.850250"], ["updated_at", "2020-05-09 22:52:02.850250"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.5ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 201 Created in 7ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "georgina@rodriguezveum.name"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "georgina@rodriguezveum.name"], ["encrypted_password", "$2a$04$XuYX0idzJ5XsjBZB0ulK9.7ICoXsnZ/fwJuBHnryEBaYaQWCx/dcu"], ["created_at", "2020-05-09 22:52:02.864013"], ["updated_at", "2020-05-09 22:52:02.864013"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PATCH "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:52:02 -0300
+Processing by CustomersController#update as JSON
+  Parameters: {"customer"=>"#<Customer:0x000055e9c827b318>", "id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Grocery"], ["created_at", "2020-05-09 22:52:57.155033"], ["updated_at", "2020-05-09 22:52:57.155033"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Len Mayer"], ["email", "email1@gmail.com"], ["address", "4889 O'Connell Rapid"], ["created_at", "2020-05-09 22:52:57.178322"], ["updated_at", "2020-05-09 22:52:57.178322"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Shae Johnson"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "25652 Harvey Viaduct"], ["created_at", "2020-05-09 22:52:57.190643"], ["updated_at", "2020-05-09 22:52:57.190643"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mr. Stan Bradtke"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "5819 Damien Station"], ["created_at", "2020-05-09 22:52:57.203414"], ["updated_at", "2020-05-09 22:52:57.203414"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephan Hahn"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "21376 Fredric Loaf"], ["created_at", "2020-05-09 22:52:57.216806"], ["updated_at", "2020-05-09 22:52:57.216806"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ms. Hugo Collier"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "4729 Rutherford Cliff"], ["created_at", "2020-05-09 22:52:57.235247"], ["updated_at", "2020-05-09 22:52:57.235247"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "steffanie@mcglynnerdman.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "steffanie@mcglynnerdman.com"], ["encrypted_password", "$2a$04$Qrds8nQLtrLfc0pyvEwP9OZoRKCL.Ljv4Kv8Pt6LH/umBGjt8ZU56"], ["created_at", "2020-05-09 22:52:57.266603"], ["updated_at", "2020-05-09 22:52:57.266603"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Noble Dickens"], ["email", "email6@gmail.com"], ["address", "8280 Friesen Cliff"], ["created_at", "2020-05-09 22:52:57.286609"], ["updated_at", "2020-05-09 22:52:57.286609"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 108], ["created_at", "2020-05-09 22:52:57.300311"], ["updated_at", "2020-05-09 22:52:57.300311"]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Electronics"], ["created_at", "2020-05-09 22:52:57.325215"], ["updated_at", "2020-05-09 22:52:57.325215"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Ergonomic Wool Bag"], ["price", 88.4], ["category_id", 36], ["created_at", "2020-05-09 22:52:57.338531"], ["updated_at", "2020-05-09 22:52:57.338531"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:52:57 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.8ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/index.json.jbuilder (59.2ms)
+Completed 200 OK in 67ms (Views: 60.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:52:57 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/show.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "madonna@aufderhar.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "madonna@aufderhar.net"], ["encrypted_password", "$2a$04$yFua.h2XjyiAAS3WPgzuK.Wfdl0z4.MPPThQhSRU5QpchgWE7chma"], ["created_at", "2020-05-09 22:52:57.476477"], ["updated_at", "2020-05-09 22:52:57.476477"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:52:57 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Maricela Turcotte", "email"=>"email7@gmail.com", "address"=>"30382 Olga Points"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Maricela Turcotte"], ["email", "email7@gmail.com"], ["address", "30382 Olga Points"], ["created_at", "2020-05-09 22:52:57.485949"], ["updated_at", "2020-05-09 22:52:57.485949"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/show.json.jbuilder (0.7ms)
+Completed 201 Created in 7ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "mandy.smith@botsford.io"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "mandy.smith@botsford.io"], ["encrypted_password", "$2a$04$KK9/bczjiHezYYynDBcncO17lq28lrIV9FhhnkgJcjcU6R.T1JKRW"], ["created_at", "2020-05-09 22:52:57.499598"], ["updated_at", "2020-05-09 22:52:57.499598"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PATCH "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:52:57 -0300
+Processing by CustomersController#update as JSON
+  Parameters: {"customer"=>"#<Customer:0x000055e9c8521158>", "id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Kids"], ["created_at", "2020-05-09 22:54:36.400713"], ["updated_at", "2020-05-09 22:54:36.400713"]]
+  [1m[35m (32.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sterling Krajcik"], ["email", "email1@gmail.com"], ["address", "73241 Zachariah Well"], ["created_at", "2020-05-09 22:54:36.453899"], ["updated_at", "2020-05-09 22:54:36.453899"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Eun Senger"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "2344 Evia Island"], ["created_at", "2020-05-09 22:54:36.465652"], ["updated_at", "2020-05-09 22:54:36.465652"]]
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rena Stoltenberg"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "63120 Runolfsson Ways"], ["created_at", "2020-05-09 22:54:36.479974"], ["updated_at", "2020-05-09 22:54:36.479974"]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mrs. Dewey Ward"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "9510 Larkin Rapid"], ["created_at", "2020-05-09 22:54:36.495463"], ["updated_at", "2020-05-09 22:54:36.495463"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Linwood Gleason"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "9762 Edwin Loop"], ["created_at", "2020-05-09 22:54:36.510665"], ["updated_at", "2020-05-09 22:54:36.510665"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "enedina_kub@dibbert.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "enedina_kub@dibbert.com"], ["encrypted_password", "$2a$04$5vyMyz7xYw7s2CjczwtGiOmoTj15Lk/Ug0d.1454jauMib4nSzld2"], ["created_at", "2020-05-09 22:54:36.540147"], ["updated_at", "2020-05-09 22:54:36.540147"]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alphonso Nicolas"], ["email", "email6@gmail.com"], ["address", "5226 Schaefer Ville"], ["created_at", "2020-05-09 22:54:36.564714"], ["updated_at", "2020-05-09 22:54:36.564714"]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 114], ["created_at", "2020-05-09 22:54:36.580904"], ["updated_at", "2020-05-09 22:54:36.580904"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Automotive, Music & Home"], ["created_at", "2020-05-09 22:54:36.606002"], ["updated_at", "2020-05-09 22:54:36.606002"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Intelligent Wooden Lamp"], ["price", 1.07], ["category_id", 38], ["created_at", "2020-05-09 22:54:36.616363"], ["updated_at", "2020-05-09 22:54:36.616363"]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:54:36 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.9ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/index.json.jbuilder (48.6ms)
+Completed 200 OK in 56ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:54:36 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.6ms)
+  Rendered customers/show.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "goldie@halvorson.name"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "goldie@halvorson.name"], ["encrypted_password", "$2a$04$ts/QRzqub7HcoAWkfi66o.H7Qd5Vt/BMaLl.XaLKp8NO2lTb//o/e"], ["created_at", "2020-05-09 22:54:36.741482"], ["updated_at", "2020-05-09 22:54:36.741482"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:54:36 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Shelby Rau", "email"=>"email7@gmail.com", "address"=>"895 Sal Valleys"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Shelby Rau"], ["email", "email7@gmail.com"], ["address", "895 Sal Valleys"], ["created_at", "2020-05-09 22:54:36.752081"], ["updated_at", "2020-05-09 22:54:36.752081"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 201 Created in 8ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "wilford@volkmanbreitenberg.net"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "wilford@volkmanbreitenberg.net"], ["encrypted_password", "$2a$04$nOSm4NpQ353dMsqXtC9eW.9I3j5UwaLrUMIjAiMq0V8vTovarvZci"], ["created_at", "2020-05-09 22:54:36.766623"], ["updated_at", "2020-05-09 22:54:36.766623"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PATCH "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:54:36 -0300
+Processing by CustomersController#update as JSON
+  Parameters: {"customer"=>{"id"=>"1", "name"=>"Mrs. Britney Corkery - Atualizado", "email"=>"email1@gmail.com", "vip"=>nil, "days_to_pay"=>nil, "gender"=>nil, "address"=>"1782 Bailey Centers", "created_at"=>"2020-05-08 01:58:09 UTC", "updated_at"=>"2020-05-08 01:58:09 UTC"}, "id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :vip, :days_to_pay, :gender, :created_at, :updated_at
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Update (0.2ms)[0m  [1m[33mUPDATE "customers" SET "name" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["name", "Mrs. Britney Corkery - Atualizado"], ["updated_at", "2020-05-09 22:54:36.774805"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Health"], ["created_at", "2020-05-09 22:54:51.324990"], ["updated_at", "2020-05-09 22:54:51.324990"]]
+  [1m[35m (28.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Olimpia Wilderman IV"], ["email", "email1@gmail.com"], ["address", "6251 Lu Falls"], ["created_at", "2020-05-09 22:54:51.372523"], ["updated_at", "2020-05-09 22:54:51.372523"]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cole Gutmann"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "1151 Cummings Route"], ["created_at", "2020-05-09 22:54:51.387963"], ["updated_at", "2020-05-09 22:54:51.387963"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mrs. Lean Wunsch"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "864 Moore Pike"], ["created_at", "2020-05-09 22:54:51.400589"], ["updated_at", "2020-05-09 22:54:51.400589"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Estella Heidenreich"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "7382 Cronin Road"], ["created_at", "2020-05-09 22:54:51.415300"], ["updated_at", "2020-05-09 22:54:51.415300"]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mr. Candi Romaguera"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "527 Osinski Cape"], ["created_at", "2020-05-09 22:54:51.431040"], ["updated_at", "2020-05-09 22:54:51.431040"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "harley_ziemann@gorczanylind.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "harley_ziemann@gorczanylind.com"], ["encrypted_password", "$2a$04$xBq/VPkoHPPUqZtqny19gevoUP9qlqmGXmEKGFtMHQii4NfnDK5LK"], ["created_at", "2020-05-09 22:54:51.458288"], ["updated_at", "2020-05-09 22:54:51.458288"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sammy Parisian"], ["email", "email6@gmail.com"], ["address", "8009 Hermann Mall"], ["created_at", "2020-05-09 22:54:51.478204"], ["updated_at", "2020-05-09 22:54:51.478204"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 120], ["created_at", "2020-05-09 22:54:51.492392"], ["updated_at", "2020-05-09 22:54:51.492392"]]
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Toys"], ["created_at", "2020-05-09 22:54:51.518060"], ["updated_at", "2020-05-09 22:54:51.518060"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Sleek Steel Coat"], ["price", 19.33], ["category_id", 40], ["created_at", "2020-05-09 22:54:51.528695"], ["updated_at", "2020-05-09 22:54:51.528695"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:54:51 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.9ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/index.json.jbuilder (68.8ms)
+Completed 200 OK in 76ms (Views: 70.6ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:54:51 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/show.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "tim@bernhard.io"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "tim@bernhard.io"], ["encrypted_password", "$2a$04$a/gngXmUC4vSxFBEsgPnSe.Dvs6TSwXjYli1N8BULCu5YSZx1Agnm"], ["created_at", "2020-05-09 22:54:51.677266"], ["updated_at", "2020-05-09 22:54:51.677266"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:54:51 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Mr. Bobby Osinski", "email"=>"email7@gmail.com", "address"=>"75590 Kilback Isle"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Bobby Osinski"], ["email", "email7@gmail.com"], ["address", "75590 Kilback Isle"], ["created_at", "2020-05-09 22:54:51.688646"], ["updated_at", "2020-05-09 22:54:51.688646"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 201 Created in 8ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "sam.waters@borer.info"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "sam.waters@borer.info"], ["encrypted_password", "$2a$04$XwpVAXcwTVRDjRaBZeOMiOPmToigS7lErZvbYZL9AFazM1oSmcLGK"], ["created_at", "2020-05-09 22:54:51.702869"], ["updated_at", "2020-05-09 22:54:51.702869"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PATCH "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:54:51 -0300
+Processing by CustomersController#update as JSON
+  Parameters: {"customer"=>{"id"=>"1", "name"=>"Mrs. Britney Corkery - Atualizado", "email"=>"email1@gmail.com", "vip"=>nil, "days_to_pay"=>nil, "gender"=>nil, "address"=>"1782 Bailey Centers", "created_at"=>"2020-05-08 01:58:09 UTC", "updated_at"=>"2020-05-08 01:58:09 UTC"}, "id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :vip, :days_to_pay, :gender, :created_at, :updated_at
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Update (0.2ms)[0m  [1m[33mUPDATE "customers" SET "name" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["name", "Mrs. Britney Corkery - Atualizado"], ["updated_at", "2020-05-09 22:54:51.709333"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/show.json.jbuilder (0.7ms)
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Kids & Computers"], ["created_at", "2020-05-09 22:56:48.474860"], ["updated_at", "2020-05-09 22:56:48.474860"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ray Huel"], ["email", "email1@gmail.com"], ["address", "70616 Hand Mountains"], ["created_at", "2020-05-09 22:56:48.499165"], ["updated_at", "2020-05-09 22:56:48.499165"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chet Barton"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "9183 Kunde Greens"], ["created_at", "2020-05-09 22:56:48.512807"], ["updated_at", "2020-05-09 22:56:48.512807"]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maira Ebert"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "33342 Natisha Streets"], ["created_at", "2020-05-09 22:56:48.527795"], ["updated_at", "2020-05-09 22:56:48.527795"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alfonso Schulist"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "90865 Douglas Ports"], ["created_at", "2020-05-09 22:56:48.542597"], ["updated_at", "2020-05-09 22:56:48.542597"]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dr. Jodee Zemlak"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "31363 Jackie Shore"], ["created_at", "2020-05-09 22:56:48.556368"], ["updated_at", "2020-05-09 22:56:48.556368"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "aaron.bahringer@medhurst.io"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "aaron.bahringer@medhurst.io"], ["encrypted_password", "$2a$04$BorUq7ZCSM2um2iATmUst.adeeZEauqkQKzOBjIwKl3RGSxCJaxEi"], ["created_at", "2020-05-09 22:56:48.590200"], ["updated_at", "2020-05-09 22:56:48.590200"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kym Abbott"], ["email", "email6@gmail.com"], ["address", "5163 Dominique Field"], ["created_at", "2020-05-09 22:56:48.612684"], ["updated_at", "2020-05-09 22:56:48.612684"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 126], ["created_at", "2020-05-09 22:56:48.627960"], ["updated_at", "2020-05-09 22:56:48.627960"]]
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Industrial & Baby"], ["created_at", "2020-05-09 22:56:48.655601"], ["updated_at", "2020-05-09 22:56:48.655601"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Durable Silk Knife"], ["price", 24.57], ["category_id", 42], ["created_at", "2020-05-09 22:56:48.665647"], ["updated_at", "2020-05-09 22:56:48.665647"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers.json" for 127.0.0.1 at 2020-05-09 19:56:48 -0300
+Processing by CustomersController#index as JSON
+  Rendering customers/index.json.jbuilder
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/_customer.json.jbuilder (0.8ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.2ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/index.json.jbuilder (72.6ms)
+Completed 200 OK in 81ms (Views: 74.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:56:48 -0300
+Processing by CustomersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.7ms)
+  Rendered customers/show.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "willian_stroman@murphydavis.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "willian_stroman@murphydavis.com"], ["encrypted_password", "$2a$04$OApP9QBpMa2znXmK8/vPD.tJ8muVSlWUCRUN9.ImsnItnPqzgFMVG"], ["created_at", "2020-05-09 22:56:48.818529"], ["updated_at", "2020-05-09 22:56:48.818529"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/customers.json" for 127.0.0.1 at 2020-05-09 19:56:48 -0300
+Processing by CustomersController#create as JSON
+  Parameters: {"customer"=>{"name"=>"Junior Trantow V", "email"=>"email7@gmail.com", "address"=>"1635 Kilback Isle"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Junior Trantow V"], ["email", "email7@gmail.com"], ["address", "1635 Kilback Isle"], ["created_at", "2020-05-09 22:56:48.829042"], ["updated_at", "2020-05-09 22:56:48.829042"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.4ms)
+  Rendered customers/show.json.jbuilder (1.0ms)
+Completed 201 Created in 8ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "tea@bergnaum.com"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "tea@bergnaum.com"], ["encrypted_password", "$2a$04$dd/2hK.BP171BKBcS5xxxuBJNhLJXUH8QzbvvD5KW6uDMpqcKQCiS"], ["created_at", "2020-05-09 22:56:48.843245"], ["updated_at", "2020-05-09 22:56:48.843245"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PATCH "/customers/1.json" for 127.0.0.1 at 2020-05-09 19:56:48 -0300
+Processing by CustomersController#update as JSON
+  Parameters: {"customer"=>{"id"=>"1", "name"=>"Mrs. Britney Corkery - Atualizado", "email"=>"email1@gmail.com", "vip"=>nil, "days_to_pay"=>nil, "gender"=>nil, "address"=>"1782 Bailey Centers", "created_at"=>"2020-05-08 01:58:09 UTC", "updated_at"=>"2020-05-08 01:58:09 UTC"}, "id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :vip, :days_to_pay, :gender, :created_at, :updated_at
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Update (0.2ms)[0m  [1m[33mUPDATE "customers" SET "name" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["name", "Mrs. Britney Corkery - Atualizado"], ["updated_at", "2020-05-09 22:56:48.849733"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering customers/show.json.jbuilder
+  Rendered customers/_customer.json.jbuilder (0.3ms)
+  Rendered customers/show.json.jbuilder (0.7ms)
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
