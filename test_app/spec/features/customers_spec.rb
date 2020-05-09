@@ -1,4 +1,5 @@
 require 'rails_helper'
+require_relative '../support/new_customer_form'
 
 # Ativando o suporte a javascript com o parâmetro js: true
 RSpec.feature "Customers", type: :feature, js: true do
@@ -32,6 +33,19 @@ RSpec.feature "Customers", type: :feature, js: true do
     # Verificando se na página aparece a mensagem de sucesso!
     expect(page).to have_content('Customer was successfully created.')
 
+  end
+
+  it 'Criando um usuário - Page Object Pattern' do
+
+    new_customer_form = NewCustomerForm.new
+    new_customer_form.login.visit_page.fill_in_with(
+      name: Faker::Name.name,
+      email: Faker::Internet.email,
+      address: Faker::Address.street_address
+    ).submit
+
+    expect(page).to have_content('Customer was successfully created.')
+    
   end
   
 

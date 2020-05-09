@@ -4897,3 +4897,106 @@ Processing by CustomersController#show as HTML
   Rendered customers/show.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.4ms)
   [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Books"], ["created_at", "2020-05-09 01:42:28.207634"], ["updated_at", "2020-05-09 01:42:28.207634"]]
+  [1m[35m (39.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Verla Bogan"], ["email", "email1@gmail.com"], ["address", "546 Konopelski Knolls"], ["created_at", "2020-05-09 01:42:28.266591"], ["updated_at", "2020-05-09 01:42:28.266591"]]
+  [1m[35m (47.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Whitney Monahan"], ["email", "email2@gmail.com"], ["vip", 1], ["days_to_pay", 30], ["address", "768 Ortiz Ports"], ["created_at", "2020-05-09 01:42:28.319534"], ["updated_at", "2020-05-09 01:42:28.319534"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Elmer Yundt"], ["email", "email3@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["address", "136 Chantal Greens"], ["created_at", "2020-05-09 01:42:28.333820"], ["updated_at", "2020-05-09 01:42:28.333820"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Karisa Strosin"], ["email", "email4@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "M"], ["address", "530 Carter Centers"], ["created_at", "2020-05-09 01:42:28.345374"], ["updated_at", "2020-05-09 01:42:28.345374"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "vip", "days_to_pay", "gender", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mr. Forrest Hilpert"], ["email", "email5@gmail.com"], ["vip", 0], ["days_to_pay", 15], ["gender", "F"], ["address", "95159 Christiansen Field"], ["created_at", "2020-05-09 01:42:28.359884"], ["updated_at", "2020-05-09 01:42:28.359884"]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "herma@aufderharschneider.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "herma@aufderharschneider.org"], ["encrypted_password", "$2a$04$MpJUsJ9EBr/bcjdRRpKxgOncM6yM.UuurhZeBlNRTqlrNvFlD29Ny"], ["created_at", "2020-05-09 01:42:28.396002"], ["updated_at", "2020-05-09 01:42:28.396002"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stasia Marvin"], ["email", "email6@gmail.com"], ["address", "14882 Hahn Ramp"], ["created_at", "2020-05-09 01:42:28.438847"], ["updated_at", "2020-05-09 01:42:28.438847"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("description", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Order nº1"], ["customer_id", 12], ["created_at", "2020-05-09 01:42:28.454484"], ["updated_at", "2020-05-09 01:42:28.454484"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Kids"], ["created_at", "2020-05-09 01:42:28.477430"], ["updated_at", "2020-05-09 01:42:28.477430"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("description", "price", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["description", "Practical Plastic Shoes"], ["price", 4.2], ["category_id", 4], ["created_at", "2020-05-09 01:42:28.489669"], ["updated_at", "2020-05-09 01:42:28.489669"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/customers" for 127.0.0.1 at 2020-05-08 22:42:30 -0300
+Processing by CustomersController#index as HTML
+  Rendering customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 175ms (Views: 169.7ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-35729bfbaf9967f119234595ed222f7ab14859f304ab0acc5451afb387f637fa.css" for 127.0.0.1 at 2020-05-08 22:42:30 -0300
+Started GET "/assets/application-606071e63663828cab176c95ba21a3ac7829ef0ed117bdd2ab7bdbcb1c510a7f.js" for 127.0.0.1 at 2020-05-08 22:42:30 -0300
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "afton.carroll@schmidt.name"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "afton.carroll@schmidt.name"], ["encrypted_password", "$2a$04$ezJ3kJTuFj5eLTBDcGLfDuuPWUOP9y6vsmLKFT/FQrZk0a.zUtjPO"], ["created_at", "2020-05-09 01:42:30.417041"], ["updated_at", "2020-05-09 01:42:30.417041"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/customers/new" for 127.0.0.1 at 2020-05-08 22:42:30 -0300
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (11.4ms)
+  Rendered customers/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+Started POST "/customers" for 127.0.0.1 at 2020-05-08 22:42:31 -0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "customer"=>{"name"=>"Rodrigo Crist PhD", "email"=>"joel@rosenbaum.org", "address"=>"362 Damion Knoll"}, "commit"=>"Create Customer"}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rodrigo Crist PhD"], ["email", "joel@rosenbaum.org"], ["address", "362 Damion Knoll"], ["created_at", "2020-05-09 01:42:31.208874"], ["updated_at", "2020-05-09 01:42:31.208874"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1:36155/customers/13
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+Started GET "/customers/13" for 127.0.0.1 at 2020-05-08 22:42:31 -0300
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "roberto.rolfson@stamm.org"], ["LIMIT", 1]]
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "roberto.rolfson@stamm.org"], ["encrypted_password", "$2a$04$4m9Rfgm0nmm090Ts6ejXeeX5g7tycfps7agPZlcL0uMvd2nvTLNBS"], ["created_at", "2020-05-09 01:42:31.452186"], ["updated_at", "2020-05-09 01:42:31.452186"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/customers/new" for 127.0.0.1 at 2020-05-08 22:42:31 -0300
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (2.1ms)
+  Rendered customers/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+Started POST "/customers" for 127.0.0.1 at 2020-05-08 22:42:32 -0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "customer"=>{"name"=>"Tamra Towne", "email"=>"carmelina@nicolascrooks.biz", "address"=>"405 Palmer Alley"}, "commit"=>"Create Customer"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tamra Towne"], ["email", "carmelina@nicolascrooks.biz"], ["address", "405 Palmer Alley"], ["created_at", "2020-05-09 01:42:32.124154"], ["updated_at", "2020-05-09 01:42:32.124154"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1:36155/customers/13
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+Started GET "/customers/13" for 127.0.0.1 at 2020-05-08 22:42:32 -0300
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
