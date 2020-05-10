@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'faker'
 
 RSpec.feature "Customer", type: :feature do
   
@@ -18,6 +19,20 @@ RSpec.feature "Customer", type: :feature do
     visit(customers_path)
     click_on('Novo Cliente')
     expect(page).to have_content('Novo Cliente')  
+  end
+
+  scenario "Cadastrar um cliente válido" do
+    visit(new_customer_path)
+    customer_name = Faker::Name.name
+    fill_in("Name",	with: customer_name)
+    fill_in("Email",	with: Faker::Internet.email)
+    fill_in("Phone",	with: Faker::PhoneNumber.phone_number_with_country_code) 
+    attach_file("Avatar", "#{Rails.root}/spec/fixtures/avatar.png")
+    choose(option: ['Y', 'N'].sample)
+    click_on('Criar Cliente')
+    
+    expect(page).to have_content('Cliente cadastrado com sucesso!')
+    expect(Customer.last.name).to eq(customer_name)    
   end
 
 end
