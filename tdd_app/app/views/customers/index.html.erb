@@ -2,7 +2,7 @@
   <p><%= flash[:notice] %></p>
 <% end %>
 
-<h1> Listando Clientes <h1>
+<h1> Listando Clientes </h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
   <% @customers.each do |customer| %>
     <tr>
       <td><%= customer.name %></td>
-      <td> <%= link_to  "Mostrar", customer_path(customer) %></td>
-      <td> <%= link_to  "Editar", edit_customer_path(customer) %> </td>
-      <td> <%= link_to  "Excluir", customer, method: :delete, data: { confirm: 'Are you sure?' }  %> </td>
+      <td><%= link_to  "Mostrar", customer_path(customer) %></td>
+      <td><%= link_to  "Editar", edit_customer_path(customer) %></td>
+      <td><%= link_to "Excluir", customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
    <% end %>
   </tbody>
