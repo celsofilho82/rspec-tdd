@@ -35,4 +35,10 @@ RSpec.feature "Customer", type: :feature do
     expect(Customer.last.name).to eq(customer_name)    
   end
 
+  scenario "Não cadastrar um cliente inválido" do
+    visit(new_customer_path)
+    click_on('Criar Cliente')
+    expect(page).to have_content("can't be blank")  
+  end
+
 end
