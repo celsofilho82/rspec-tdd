@@ -1,5 +1,6 @@
 class CustomersController < ApplicationController
-  
+  before_action :set_customer, only: [:edit, :update, :show]
+
   def index
     @customers = Customer.all
   end
@@ -17,15 +18,31 @@ class CustomersController < ApplicationController
     end
   end
 
-def show
-  @customer = Customer.find(params[:id])
-end
+  def show
+  end
 
+  def edit
+  end
+
+  def update
+      if @customer.update(customer_params)
+        flash[:notice] = "Cliente atualizado com sucesso!"
+        redirect_to customer_path(@customer)
+      else
+        flash[:error] = "Something went wrong"
+        render 'edit'
+      end
+  end
   
+    
   private
 
   def customer_params
     params.require(:customer).permit(:id, :name, :email, :smoker, :phone, :avatar)
+  end
+  
+  def set_customer
+    @customer = Customer.find(params[:id])
   end
   
 
