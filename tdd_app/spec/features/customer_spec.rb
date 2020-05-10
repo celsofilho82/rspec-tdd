@@ -91,10 +91,38 @@ RSpec.feature "Customer", type: :feature do
     visit(edit_customer_path(customer.id))
     fill_in('Name', with: new_name)
     click_on('Atualizar Cliente') 
-    
+
     expect(page).to have_content('Cliente atualizado com sucesso!')
     expect(page).to have_content(new_name)
        
+  end
+
+  scenario "Testando o link mostrar cliente" do
+    customer = Customer.create!(
+      name: Faker::Name.name,
+      email: Faker::Internet.email,
+      phone: Faker::PhoneNumber.phone_number_with_country_code,
+      smoker: ['Y', 'N'].sample,
+      avatar: "#{Rails.root}/spec/fixtures/avatar.png"
+    )
+
+    visit(customers_path)
+    find(:xpath, "/html/body/table/tbody/tr[1]/td[2]/a").click
+    expect(page).to have_content("Mostrando Cliente")  
+  end
+
+  scenario "Testando o link editar cliente" do
+    customer = Customer.create!(
+      name: Faker::Name.name,
+      email: Faker::Internet.email,
+      phone: Faker::PhoneNumber.phone_number_with_country_code,
+      smoker: ['Y', 'N'].sample,
+      avatar: "#{Rails.root}/spec/fixtures/avatar.png"
+    )
+
+    visit(customers_path)
+    find(:xpath, "/html/body/table/tbody/tr[1]/td[3]/a").click
+    expect(page).to have_content("Editando um Cliente")  
   end
 
 end
